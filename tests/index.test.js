@@ -1,9 +1,16 @@
 import expect from 'expect'
 
-import message from 'src/index'
+import { setLocale, object, string } from 'yup'
+import fa from 'src'
 
-describe('Module template', () => {
-  it('displays a welcome message', () => {
-    expect(message).toContain('Welcome to yup')
-  })
+setLocale(fa)
+
+describe('yup-locale-fa string', async () => {
+    it('should display length message', () => {
+        const schema = object({
+            name: string().length(2)
+        })
+        schema.validateSync({ name: '123' })
+        expect().toContain('Welcome to yup')
+    })
 })

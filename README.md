@@ -1,16 +1,24 @@
-# yup
+# yup-locale-fa
+Persian/Farsi locale and translation for yup default messages
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+## Getting Started
 
-Describe yup here.
+```sh
+$ yarn add yup yup-locale-fa
+# or...
+$ npm i yup yup-locale-fa
+```
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+then, set a locale object as yup's default message dictionary with `setLocale` function.
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+```js
+import { setLocale } from "yup";
+import fa from "yup-locale-fa";
+setLocale(fa);
+//Or use a flavor or your choice
+//for now only descriptive flavor is available
+import { descriptive } from "yup-locale-fa";
+setLocale(descriptive);
+```
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+For more info, see [yup's README](https://github.com/jquense/yup#using-a-custom-locale-dictionary).

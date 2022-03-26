@@ -1,13 +1,12 @@
 {
-  "name": "yup",
-  "version": "1.0.0",
-  "description": "Describe yup here",
+  "name": "yup-locale-fa",
+  "version": "0.1.0",
+  "description": "Persian/Farsi localized messages for yup schema validation library",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
     "es",
-    "lib",
-    "umd"
+    "lib"
   ],
   "scripts": {
     "build": "nwb build-web-module",
@@ -15,15 +14,19 @@
     "prepublishOnly": "npm run build",
     "test": "nwb test",
     "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
-  },
-  "dependencies": {
+    "test:watch": "nwb test --server",
+    "lint": "eslint **/src/**/*.js"
   },
   "devDependencies": {
-    "nwb": "0.25.x"
+    "eslint": "^8.2.0",
+    "nwb": "0.25.x",
+    "yup": "^0.32.11"
   },
-  "author": "",
-  "homepage": "",
+  "repository": "git@github.com:mohas/yup-locale-fa.git",
+  "author": "mohas <m.assar2002@gmail.com>",
   "license": "MIT",
-  "repository": ""
+  "homepage": "https://github.com/mohas/yup-locale-fa",
+  "bugs": {
+    "url": "https://github.com/mohas/yup-locale-fa/issues"
+  }
 }
