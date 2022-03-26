@@ -1,6 +1,6 @@
 {
   "name": "yup-locale-fa",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Persian/Farsi localized messages for yup schema validation library",
   "main": "lib/index.js",
   "module": "es/index.js",
