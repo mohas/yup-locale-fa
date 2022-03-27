@@ -1,4 +1,4 @@
-import printValue from './printValue'
+import printValue from './printValues'
 
 export const mixed = {
     default: '${path} صحیح نمی باشد',
