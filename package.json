@@ -1,6 +1,6 @@
 {
   "name": "yup-locale-fa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Persian/Farsi localized messages for yup schema validation library",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -15,7 +15,7 @@
     "test": "nwb test",
     "test:coverage": "nwb test --coverage",
     "test:watch": "nwb test --server",
-    "lint": "eslint **/src/**/*.js"
+    "lint": "eslint **/src/**/*.mjs"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
